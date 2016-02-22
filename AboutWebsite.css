@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+body {
+  font: 100% Roboto, sans-serif;
+  padding: 50px;
+  margin: 0;
+}
+/* Nav Button */
+nav {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  border-radius: 25px;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-clip-path: circle(24px at 30px 24px); /* Uses the clip to add the circle fill effect to the nav interface */
+  clip-path: circle(24px at 32px 24px); /* Defines the clip path of the circle */
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s; /* Transition of the circle to box */
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s; /* Added webbrowser support */
+}
+
+nav:hover { /* class nav on hover */
+	background: rgba(255, 255, 255, 0.8);
+  -webkit-transition-timing-function: ease-out; /* timing of the transiton on hover */
+  transition-timing-function: ease-out; /* Web browser support for the transition */
+  -webkit-transition-duration: 0.75s; /* Time the transition takes */
+  transition-duration: 0.75s; /* Transition Time support */
+  -webkit-clip-path: circle(390px at 225px 24px); /* Clip on hover */
+  clip-path: circle(390px at 150px 24px); /* clip path on hover */
+}
+
+a { /* Anchor tags inside the navigation interface */
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+#NavActive {
+	background: rgba(255,224,130, 0.5);
+}
+#navEntry:hover {
+	background: rgba(255,224,130, 0.5);
+	border-radius: 0px 0px 25px 25px;
+}
+.navEntry:hover { background: rgba(255,224,130, 0.5); }
+
+a:active { background: #ffca28; }
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+/* ~~~~~~~~~~~~~~~~~~~~Nav Button End~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~ Styles ~~~~~~~~~~~~~~~~~ */
+#News {
+	margin: 0, 10px;
+	background: rgba(255, 255, 255, 0.6)
+	position: absolute;
+	max-width: 900px;
+	width: 100%;
+}
+.contactForm {
+	position: absolute;
+	margin-top: 50px;
+}
+#contactJumbo {
+	height: 500px;
+}
+.contactJumbo {
+	margin: 5%, 10%;
+	background: rgba(255, 255, 255, 0.6)
+	position: absolute;
+	max-width: 900px;
+	width: 100%;
+}
+#contactPage {
+	 background: url(http://www.lirent.net/wp-content/uploads/2014/10/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2-800x450.png);
+	 background-size: cover;
+}
+#resourcesPage {
+	background: url(http://presskit.ko-opmode.com/skipping_stones/images/morninglonelytree.png);
+	background-size: cover;
+}
+#aboutPage {
+	background: url(https://d13yacurqjgara.cloudfront.net/users/13449/screenshots/1816328/attachments/301046/Lakeside_SunRise_1920x1080.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+#myPage {
+	background: url(http://bigfootdemo.wpthemess.net/wp-content/uploads/2015/03/flat-design-wallpapers-HD-05.png);
+	background-size: cover;
+}
+/* ~~~~~~~~~~~~~~~~ Styles End ~~~~~~~~~~~~~*/
